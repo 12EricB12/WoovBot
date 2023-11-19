@@ -7,6 +7,7 @@ client = commands.Bot(command_prefix='+', intents=discord.Intents.all())
 slash = SlashCommand(client, sync_commands=True)
 bot_token = os.environ['TOKEN']
 
+print(bot_token)
 
 @client.command()
 async def load(ctx, extension):
